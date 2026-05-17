@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "fpv_custom")(type "KiCad")(uri "${KIPRJMOD}/fpv_custom.pretty")(options "")(descr ""))
+  (lib (name "BQ257003")(type "KiCad")(uri "${KIPRJMOD}/Custom_Libs/BQ257003.pretty")(options "")(descr ""))
+)

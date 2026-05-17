@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "CP2102N-A02-GQFN28")(type "KiCad")(uri "${KIPRJMOD}/CP2102N-A02-GQFN28.kicad_sym")(options "")(descr ""))
+  (lib (name "BQ25703ARSNR")(type "KiCad")(uri "${KIPRJMOD}/Custom_Libs/BQ25703ARSNR.kicad_sym")(options "")(descr ""))
+  (lib (name "fpv_custom")(type "KiCad")(uri "${KIPRJMOD}/Custom_Libs/fpv_custom.kicad_sym")(options "")(descr ""))
+  (lib (name "My_Symbols")(type "KiCad")(uri "${KIPRJMOD}/Custom_Libs/My_Symbols.kicad_sym")(options "")(descr ""))
+)

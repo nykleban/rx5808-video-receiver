@@ -1,0 +1,140 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "6deb6880-1bbf-4684-839b-2ba217251673")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 143.51 22.86)
+		(size 92.71 58.42)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "71444636-aa9c-485a-920c-b3a939655e2d")
+		(property "Sheetname" "RX5808"
+			(at 143.51 22.1484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rx5808_rf.kicad_sch"
+			(at 143.51 81.8646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "atmega328"
+				(path "/6deb6880-1bbf-4684-839b-2ba217251673"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 27.94 104.14)
+		(size 100.33 54.61)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c55e72ec-4159-4c35-bd63-c6d944b5d395")
+		(property "Sheetname" "MCU_Block"
+			(at 27.94 103.4284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu_atmega_spi.kicad_sch"
+			(at 27.94 159.3346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "atmega328"
+				(path "/6deb6880-1bbf-4684-839b-2ba217251673"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 26.67 24.13)
+		(size 86.36 44.45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "eb1ee2b8-c61f-4c01-82bf-d71657a223d6")
+		(property "Sheetname" "Power_Block"
+			(at 26.67 23.4184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_usb_battery_buck.kicad_sch"
+			(at 26.67 69.1646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "atmega328"
+				(path "/6deb6880-1bbf-4684-839b-2ba217251673"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
