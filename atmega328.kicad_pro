@@ -506,6 +506,24 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.25,
+        "name": "Gate_Drive",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.4
+      },
+      {
+        "clearance": 0.25,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.8,
+        "via_diameter": 0.8,
+        "via_drill": 0.4
       }
     ],
     "meta": {
@@ -513,7 +531,60 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "VBUS"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VBUS_FUSED"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VBAT"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "SYS"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+3.3V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "3.3V"
+      },
+      {
+        "netclass": "Gate_Drive",
+        "pattern": "HIDRV1"
+      },
+      {
+        "netclass": "Gate_Drive",
+        "pattern": "LODRV1"
+      },
+      {
+        "netclass": "Gate_Drive",
+        "pattern": "HIDRV2"
+      },
+      {
+        "netclass": "Gate_Drive",
+        "pattern": "LODRV2"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "Net-(U2-SW)"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "Net-(Q1-S)"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "Net-(Q2-S)"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
