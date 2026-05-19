@@ -1,4 +1,4 @@
-27226131475081339
+27327262419927638
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -2820,13 +2820,6 @@ speaker CUI
 0
 2
 2
-CP2102N-A02-GQFN28
-QFN50P500X500X80-29N
-
-
-0
-29
-29
 Calibration_Scale
 Gauge_10mm_Type1_CopperTop
 Gauge, Massstab, 10mm, CopperTop, Type 1,
@@ -95171,13 +95164,6 @@ antenna rf
 0
 3
 2
-RF_Antenna
-RX5808
-
-
-0
-12
-12
 RF_Antenna
 Texas_SWRA117D_2.4GHz_Left
 http://www.ti.com/lit/an/swra117d/swra117d.pdf

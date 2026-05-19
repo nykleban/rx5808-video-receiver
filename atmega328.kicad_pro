@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.27,
-          "width": 2.54
+          "drill": 0.3,
+          "height": 0.6,
+          "width": 0.6
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -52,7 +52,28 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_issues|109500000|77500000|995b410f-22c3-429e-a169-8b70f8f3929f|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|104850000|142637500|13c091c1-454c-46d7-a533-4297902f9596|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|147500000|148500000|3c4b76e0-cc49-40ec-a97e-12fc2ed36f65|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "silk_edge_clearance|102380000|161250000|cb6769fb-d3c1-4f4d-8710-45e6fb3002ad|526bc6c9-8c97-4120-866d-ca7b2c8bb208",
+          ""
+        ],
+        [
+          "silk_edge_clearance|92980000|161250000|cb6769fb-d3c1-4f4d-8710-45e6fb3002ad|67b6f7eb-84a3-4bbf-be25-af903ffc5ed3",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -491,7 +512,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -508,7 +529,7 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.25,
+        "clearance": 0.15,
         "name": "Gate_Drive",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
@@ -516,7 +537,7 @@
         "track_width": 0.4
       },
       {
-        "clearance": 0.25,
+        "clearance": 0.15,
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
