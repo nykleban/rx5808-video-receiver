@@ -3023,7 +3023,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "254633d7-8289-4f22-880d-e63972dcfc0e")
 		(property "Reference" "U4"
