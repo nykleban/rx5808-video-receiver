@@ -3819,7 +3819,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "675f3551-a3cd-409f-b72c-993bec1ae4ac")
 		(property "Reference" "J3"
