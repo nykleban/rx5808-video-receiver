@@ -2176,6 +2176,24 @@
 				(hide yes)
 			)
 		)
+		(property "KLC_S3.3" ""
+			(at 153.67 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 153.67 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "4adbea87-7d23-4d2e-bca8-d4bf80c29ed4")
 		)
@@ -2314,7 +2332,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C844920"
+		(property "LCSC" "C844939"
+			(at 182.88 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 182.88 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 182.88 104.14 90)
 			(effects
 				(font
@@ -2459,7 +2495,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1017"
+		(property "LCSC" "C21519"
+			(at 208.28 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 208.28 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 208.28 115.57 90)
 			(effects
 				(font
@@ -2538,7 +2592,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C118288"
+		(property "LCSC" "C1710"
+			(at 171.45 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 171.45 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 171.45 119.38 0)
 			(effects
 				(font
@@ -2616,7 +2688,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C20087902"
+		(property "LCSC" "C441970"
+			(at 156.21 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 156.21 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 156.21 100.33 0)
 			(effects
 				(font
@@ -2685,6 +2775,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 133.35 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 133.35 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 133.35 115.57 0)
 			(effects
 				(font
@@ -2929,7 +3037,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2158342"
+		(property "LCSC" "C136294"
+			(at 147.32 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 147.32 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 147.32 85.09 0)
 			(effects
 				(font
@@ -3008,7 +3134,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1591"
+		(property "LCSC" "C1711"
+			(at 184.15 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 184.15 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 184.15 119.38 0)
 			(effects
 				(font
@@ -3086,7 +3230,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1591"
+		(property "LCSC" "C1711"
+			(at 139.7 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 139.7 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 139.7 85.09 0)
 			(effects
 				(font
@@ -3301,7 +3463,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5356059"
+		(property "LCSC" ""
+			(at 106.68 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 106.68 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 106.68 123.19 0)
 			(effects
 				(font
@@ -3353,7 +3533,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 199.0852 123.19 0)
 			(effects
 				(font
@@ -3380,7 +3560,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2969873"
+		(property "LCSC" "C7469956"
+			(at 198.12 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 198.12 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 198.12 119.38 0)
 			(effects
 				(font
@@ -3593,7 +3791,25 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1591"
+		(property "LCSC" "C1711"
+			(at 186.69 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 186.69 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
 			(at 186.69 107.95 0)
 			(effects
 				(font
