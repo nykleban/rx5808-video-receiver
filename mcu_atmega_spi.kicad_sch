@@ -8521,10 +8521,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
-		(fields_autoplaced yes)
 		(uuid "8e256661-86ae-47e4-8a69-7a5de739ef04")
 		(property "Reference" "C30"
-			(at 130.81 85.09 90)
+			(at 130.556 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8534,7 +8533,7 @@
 			)
 		)
 		(property "Value" "27pF"
-			(at 130.81 87.63 90)
+			(at 130.81 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10078,7 +10077,7 @@
 		(dnp no)
 		(uuid "be5a97fd-16a4-4f6a-8a1d-a41c5f987c5a")
 		(property "Reference" "R19"
-			(at 119.38 105.41 90)
+			(at 119.38 108.458 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10089,7 +10088,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 119.38 107.95 90)
+			(at 119.38 110.49 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10529,10 +10528,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c7a62655-62f3-4ccd-8f0d-9ee03a526a08")
 		(property "Reference" "R18"
-			(at 120.65 99.0599 0)
+			(at 116.84 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10543,7 +10541,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 120.65 101.5999 0)
+			(at 117.094 100.584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

@@ -4930,6 +4930,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 160.02) (xy 30.48 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "563498fa-043c-4a69-ab95-013d6d8c39f0")
+	)
+	(wire
+		(pts
 			(xy 53.34 160.02) (xy 90.17 160.02)
 		)
 		(stroke
@@ -5739,7 +5749,7 @@
 		(uuid "57610a30-3717-4705-a40d-b8c99ce0d909")
 	)
 	(label "VBAT-"
-		(at 30.48 162.56 180)
+		(at 26.67 160.02 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13753,7 +13763,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 139.7 38.1 270)
+		(at 139.7 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13763,7 +13773,7 @@
 		(dnp no)
 		(uuid "ffc9d502-4cd6-45c1-bf4c-509be8b874ff")
 		(property "Reference" "#PWR020"
-			(at 133.35 38.1 0)
+			(at 139.7 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13774,7 +13784,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 144.018 38.608 90)
+			(at 144.018 38.354 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
