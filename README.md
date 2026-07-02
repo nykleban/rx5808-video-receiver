@@ -1,37 +1,131 @@
 # Smart FPV Analog RX & Spectral Analyzer
 
-**Проєкт:** Апаратно-програмний комплекс для прийому аналогового FPV-відеосигналу (5.8 ГГц) та сканування радіочастотного спектра в реальному часі. 
+Апаратно-програмний комплекс для прийому та аналізу аналогового FPV-відеосигналу в діапазоні 5.8 GHz. Проєкт поєднує 4-шарову друковану плату, RF-модуль RX5808, мікроконтролер ATmega328P, систему живлення та Python-інтерфейс для моніторингу RSSI в реальному часі.
 
----
+Плата спроєктована в KiCad і замовлена через JLCPCB. На момент підготовки репозиторію плата ще не доставлена, тому в репозиторії подані проєктні матеріали: схема, PCB-layout, production-файли, 3D-рендери та скріншоти програмної частини.
 
-## Про Проєкт
+## Основні можливості
 
-Цей репозиторій містить вихідний код прошивки, десктопного додатку та файли проєкту друкованої плати (PCB) для розумного FPV-приймача. Система побудована на базі мікроконтролера **ATmega328P**, високочастотного модуля **RX5808** та розширеної системи керування живленням для забезпечення максимальної стабільності та чистих аналогових показників без перешкод. 
+- прийом аналогового FPV-сигналу 5.8 GHz через RX5808;
+- перемикання FPV-частот через SPI-керування RX5808;
+- зчитування RSSI для оцінки рівня сигналу;
+- виведення band, channel, frequency та RSSI через serial log;
+- візуалізація RSSI в desktop analyzer у реальному часі;
+- підготовлена 4-шарова PCB з окремими RF, MCU та power-management блоками;
+- production package для виготовлення плати.
 
-Проєкт поєднує в собі низькорівневе програмування вбудованих систем, розробку багатошарових PCB із високими вимогами до розведення імпульсних вузлів, а також десктопний аналізатор інтерфейсу на Python. Розроблено в рамках інженерно-практичної роботи програми робототехніки Інституту ІТ та бізнесу (ІІТБ).
+## Hardware
 
----
+- RX5808 5.8 GHz FPV receiver module;
+- ATmega328P microcontroller;
+- BQ25703A power-management controller;
+- HY2120-CB battery protection IC;
+- CP2102N USB-to-UART bridge;
+- USB Type-C;
+- SMA edge-mount antenna connector.
 
-## Основні Характеристики системи
+## PCB
 
-### Hardware (Апаратна частина)
-* **RF-модуль:** Приймач **RX5808 (5.8 GHz)** із керуванням через шину SPI для точного вибору частоти.
-* **Мікроконтролер:** **ATmega328P** із зовнішнім кварцовим резонатором TXC на 16 МГц.
-* **Power Management (Система живлення):** * Професійний Buck-Boost контролер заряду **Texas Instruments BQ25703A** для роботи з силовими струмами.
-  * Інтегрований апаратний захист акумулятора на базі мікросхеми **HY2120-CB** (SOT-23-6).
-  * Точний вимір струму за допомогою прецизійних шунтів (10mOhm) та диференціального розведення.
-* **Інтерфейси:** * Порт **USB Type-C** для живлення та передачі даних.
-  * Торцевий високочастотний роз'єм **SMA Edge-Mount (RF Solutions CON-SMA-EDGE-S)** для надійної фіксації FPV-антен.
+Плата розроблена як 4-шарова PCB з розділенням критичних вузлів:
 
-### Software (Програмна частина)
-* **Firmware (C/C++):** Оптимізована прошивка мікроконтролера. Використовує роботу з регістрами для швидкісного перемикання каналів через SPI та стабільний I2C для обміну даними з контролером BQ.
-* **Спектральний аналізатор (Python GUI):** Десктопний додаток для візуалізації RSSI (рівня сигналу) у реальному часі, побудови графіків завантаженості ефіру та пошуку вільних FPV-канали.
+- RF-блок із RX5808 та SMA-роз'ємом;
+- MCU-блок на ATmega328P;
+- power-management блок із BQ25703A;
+- USB/UART-блок для підключення до комп'ютера;
+- окреме трасування для силових та сигнальних ліній;
+- GND-полігони для зменшення шумів і покращення стабільності аналогових вимірювань.
 
----
+У репозиторії є KiCad-файли, BOM, component positions, designators, IPC netlist і production archive.
 
-## Архітектура Друкованої Плати (PCB Layout)
+## Firmware
 
-Плата розроблена як двошарова текстолітова структура (товщина 1.6 мм) з урахуванням суворих правил трасування:
-1. **Ізоляція шумів:** Силовий імпульсний блок (BQ25703A + котушки) максимально віддалений від аналогової частини приймача RX5808.
-2. **Товщина ліній (Net Classes):** Силові лінії розведені доріжками товщиною 0.8 мм для витримування високих струмів, виділено окремий клас керування затворами (`Gate_Drive`).
-3. **Екранування (Copper Pour):** Верхній та нижній шари залиті суцільними полігонами заземлення (`GND`) для створення електромагнітного екрана.
+Прошивка для ATmega328P реалізує:
+
+- SPI-керування RX5808;
+- вибір FPV-частоти;
+- зчитування RSSI через ADC;
+- I2C-взаємодію з power-management контролером;
+- serial logging для перевірки каналу, частоти та RSSI.
+
+Файл прошивки:
+
+- `CODE/fpv_receiver.ino`
+
+## Desktop analyzer
+
+Python-додаток використовується для перегляду RSSI в реальному часі. Він дає змогу візуально порівнювати рівень сигналу на різних каналах і бачити стабільність прийому.
+
+Використані технології:
+
+- Python;
+- PyQt5;
+- pyqtgraph;
+- pyserial;
+- NumPy.
+
+Файл додатку:
+
+- `CODE/main.py`
+
+## Структура репозиторію
+
+```text
+.
+├── CODE/                         # firmware and desktop analyzer
+│   ├── fpv_receiver.ino
+│   └── main.py
+├── IMAGES/                       # renders, schematics and analyzer screenshots
+├── Custom_Libs/                  # custom KiCad symbols and footprints
+├── production/                   # BOM, positions, designators, netlist
+├── atmega328.kicad_pcb           # PCB layout
+├── atmega328.kicad_sch           # main schematic
+├── mcu_atmega_spi.kicad_sch      # MCU/SPI schematic block
+├── rx5808_rf.kicad_sch           # RF schematic block
+├── power_usb_battery_buck.kicad_sch
+└── production.zip
+```
+
+## Візуальні матеріали
+
+### PCB та схема
+
+![Front 3D view](IMAGES/front_3d_view.png)
+
+![Back 3D view](IMAGES/back_3d_view.png)
+
+![PCB layout](IMAGES/pcb.png)
+
+![Power block schematic](IMAGES/power_block_sch.png)
+
+![RF block schematic](IMAGES/RF_block_sch.png)
+
+![ATmega328P block schematic](IMAGES/atmega328_block_sch.png)
+
+### RSSI analyzer
+
+![Low signal RSSI](IMAGES/rx5808_rssi_realtime_low_signal.png)
+
+![Detected signal RSSI](IMAGES/rx5808_rssi_realtime_detected_signal.png)
+
+![Serial RSSI log](IMAGES/rx5808_serial_rssi_log.png)
+
+## Production files
+
+Папка `production/` містить матеріали для виготовлення та перевірки плати:
+
+- `bom.csv`;
+- `positions.csv`;
+- `designators.csv`;
+- `netlist.ipc`;
+- `atmega328.zip`.
+
+Також у корені є `production.zip` як готовий архів production package.
+
+## Поточний статус
+
+- schematic design completed;
+- 4-layer PCB layout completed;
+- production files generated;
+- PCB ordered through JLCPCB;
+- firmware and desktop analyzer added to the repository;
+- RSSI analyzer screenshots included.
